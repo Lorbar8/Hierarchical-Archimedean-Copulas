@@ -1,1 +1,8 @@
-# Hierarchical-Archimedean-Copulas
+# Hierarchical Archimedean Copulas
+The repo contains the R file related to the master thesis I wrote for my Msc in Actuarial Sciences and Quantitative Finance at Sapienza Università di Roma.
+My thesis is about using HAC to model financial returns in a high dimensional scenario. 
+Risk aggregation is a topic that affects the insurance and financial sectors, whether dealing with pricing problems or risk measurement. Examples of challenges that require computing a multivariate distribution of risks include the pricing of derivative instruments such as Collateralized Debt Obligations (CDOs), the computation of Value at Risk (VaR) for investment portfolios, and the calculation of solvency capital for banks and insurance companies. This work aims to investigate copulas as a tool for aggregating financial risks. The choice to focus on the financial domain is motivated by the ease of obtaining data for financial instruments such as stock prices.
+
+A copula is a mathematical tool whose popularity stems from the fact that it allows a multivariate distribution to be separated into two distinct components: the marginal distributions and the copula.
+
+The HACs represent an extension of the classical Archimedean Copulas, allowing for higher flexibility (and higher complexity). The code in the repo model the returns of 400 companies of the SP&500 using different aggregation structures, according to the sector and the industry of each firm. After having estimated several HAC models, I picked the best in terms of Wasserstein distance and used it to compute a simulation for risk management purposes. To conclude, considering a portoflio with market cap based weights, I computed the VaR and the Expected Shortfall and analyzed the results.
